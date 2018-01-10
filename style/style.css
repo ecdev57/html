@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+	background:  #f2f2f2;
+  font-size: 17px;
+  font-family: 'Courgette', cursive;
+}
+h1{
+	background:#e6e6e6;
+	text-align: center;
+	text-transform: capitalize;
+	 text-shadow: 2px 2px #fff;
+	-moz-box-shadow: 10px 10px 5px #656565;
+-webkit-box-shadow: 10px 10px 5px #656565;
+-o-box-shadow: 10px 10px 5px #656565;
+box-shadow: 10px 10px 5px #656565;
+}
+header{
+ opacity: 1;
+}
+/* menu */
+.header{
+	background: url(../img/website-design-development-services-500x500.jpg);
+	height: 260px;
+  filter: blur(0.5px);
+  -webkit-filter: blur(0.5px);
+   opacity: 0.2;
+}
+.menu{
+	display:  inline-block;
+	clear: both;
+  width: 100%;
+  background:#c2d0dc;
+  text-align: center;
+  text-shadow: 2px 2px #fff;
+  -moz-box-shadow: 10px 10px 5px #656565;
+  -webkit-box-shadow: 10px 10px 5px #656565;
+  -o-box-shadow: 10px 10px 5px #656565;
+  box-shadow: 10px 10px 5px #656565;
+  line-height: 50px;
+  border-radius: 25px 100px 25px 100px;
+  margin-bottom: 12px;
+}
+.menu a{
+  padding: 0px 50px 0px 50px;
+  font-size: 24px;
+  text-decoration:none; 
+}
+.menu a:hover{color: #2e2f30;}
+.menu a:click{
+	color: #2e2f30;
+	font-weight: bold;
+}
+.menu  a.fontsize {
+  font-family: 'Sacramento', cursive;
+  font-size: 54px;
+  color: #000;
+}
+/*contenu */
+.cath {
+    float: left;
+    margin: 30px 2% 30px 7%;
+    padding: 0px;
+    width: 807px;
+    height: 183px;
+    border: 1px solid black;
+    background: rgba(0,0,0,0.1);
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
+    border-radius: 0px 12px 22px 12px;
+}
+
+.text{
+  width: 750px;
+  padding: 10px;
+  margin: 0 auto;
+}
+.text > header{
+  margin-bottom: 20px;
+}
+.img{width: 100%;}
+.container {
+  margin: 0 auto;
+  padding: 30px 0;
+  text-align: center;
+  width: 600px;
+}
+.chart {
+  display: inline-block;
+  color: #999;
+  text-align: center;
+  position: relative;
+}
+.chart h2 {
+  height: 50px;
+  width: 100px;
+  color: #f5f8f9;
+  border: 20px solid #f5f8f9;
+  border-radius: 100px;
+  padding: 30px 25px 70px;
+  margin: 0;
+}
+
+svg .outer {
+  stroke: #f26f21;
+}
+
+.chart svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.outer {
+  fill: transparent;
+  /*allows transparency for inner circle*/
+  stroke: #333;
+  stroke-width: 20;
+  /*width of animated percent*/
+  stroke-dasharray: 534;
+  transition: stroke-dashoffset 1s;
+  -webkit-animation-play-state: running;
+}
+
+.number {
+  display: block;
+  font-size: 44px;
+}
+
+.chart:hover .outer {
+  stroke-dashoffset: 534 !important;
+  /*specifies distance into pattern to start dash*/
+  -webkit-animation-play-state: paused;
+}
+
+/*Set initial animation values*/
+.chart[data-percent='75'] .outer {
+  stroke-dashoffset: 124;
+  /*stops it at correct point*/
+  animation: show75 2s;
+}
+
+/* Begin initial animation */
+@keyframes show75 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 124;
+  }
+}
+/* End animation */
+.container {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.chart {
+  position: relative;
+  display: inline-block;
+  color: #999;
+  font-size: 20px;
+  text-align: center;
+}
+
+.chart figcaption {
+  padding: 50px 25px;
+  width: 100px;
+  height: 50px;
+  border: 20px solid #f0f0f0;
+  border-radius: 100px;
+  line-height: 50px;
+}
+
+.chart img {
+  position: absolute;
+  max-width: 100px;
+  max-height: 100px;
+  background: white;
+}
+/* END Container styles */
+
+/* Colors for the circles and positions for the graphics */
+.html {
+  top: 50px;
+  left: 45px;
+}
+
+.html + svg .outer {
+  stroke: #e34f26;
+}
+
+.css {
+  top: 55px;
+  left: 48px;
+}
+
+.css + svg .outer {
+  stroke: #0d84ce;
+}
+
+.javascript {
+  max-width: 90px;
+  max-height: 90px;
+  top: 45px;
+  left: 45px;
+}
+
+.javascript + svg .outer {
+  stroke: #f0e040;
+}
+
+.node {
+  width: 200px;
+  height: 200px;
+  top: 45px;
+  left: 45px;
+}
+
+.node + svg .outer {
+  stroke: #83cd29;
+}
+
+.chart svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.outer {
+  fill: transparent;
+  stroke: #333;
+  stroke-width: 20;
+  stroke-dasharray: 534;
+  transition: stroke-dashoffset 1s;
+  -webkit-animation-play-state: running;
+  
+  /* firefox bug fix - won't rotate at 90deg angles */
+  -moz-transform: rotate(-89deg) translateX(-190px);
+}
+
+.chart:hover .outer {
+  stroke-dashoffset: 534 !important;
+  -webkit-animation-play-state: paused;
+}
+/* END Circle colors and graphic positions */
+
+
+/* Set the initial values for the animation */
+.chart[data-percent='100'] .outer {
+  stroke-dashoffset: 0;
+  -webkit-animation: show100 2s;
+  animation: show100 2s;
+}
+
+.chart[data-percent='75'] .outer {
+  stroke-dashoffset: 133;
+  -webkit-animation: show75 2s;
+  animation: show75 2s;
+}
+
+.chart[data-percent='50'] .outer {
+  stroke-dashoffset: 267;
+  -webkit-animation: show50 2s;
+  animation: show50 2s;
+}
+
+.chart[data-percent='25'] .outer {
+  stroke-dashoffset: 401;
+  -webkit-animation: show25 2s;
+  animation: show25 2s;
+}
+/* END set initial animation values */
+
+/* Keyframes for the initial animation */
+@-webkit-keyframes show100 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes show100 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes show75 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 134;
+  }
+}
+
+@keyframes show75 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 124;
+  }
+}
+
+@-webkit-keyframes show50 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 267;
+  }
+}
+
+@keyframes show50 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 267;
+  }
+}
+
+@-webkit-keyframes show25 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 401;
+  }
+}
+
+@keyframes show25 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 401;
+  }
+}
+/* END Keyframes for the initial animation */
+footer{width: 100%;}

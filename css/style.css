@@ -1,0 +1,23 @@
+*{
+	margin:0;
+	padding: 0;
+}
+header, footer{
+	 background: url(../img/website-design-development-services-500x500.jpg); 
+  	height: 264px;
+}
+body{
+	background: #f2f2f2;
+}
+nav{
+	position: absolute;
+	background: #069;
+	width: 100%;
+	line-height:50px; /*hauteur de l'image de fond*/
+}
+.menu li{
+	 text-align: center;
+  letter-spacing: 5px;
+  display: inline-block;
+  padding: 20px;
+}
